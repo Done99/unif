@@ -37,8 +37,6 @@
               "<div class='btn-group'>" +
                 "<a class='btn btn-default" + size + "' data-wysihtml5-command='insertUnorderedList' title='" + locale.lists.unordered + "' tabindex='-1'><i class='fa fa-list-ul'></i></a>" +
                 "<a class='btn btn-default" + size + "' data-wysihtml5-command='insertOrderedList' title='" + locale.lists.ordered + "' tabindex='-1'><i class='fa fa-list-ol'></i></a>" +
-                "<a class='btn btn-default" + size + "' data-wysihtml5-command='Outdent' title='" + locale.lists.outdent + "' tabindex='-1'><i class='fa fa-indent'></i></a>" +
-                "<a class='btn btn-default" + size + "' data-wysihtml5-command='Indent' title='" + locale.lists.indent + "' tabindex='-1'><i class='fa fa-dedent'></i></a>" +
               "</div>" +
             "</li>";
         },
@@ -88,7 +86,7 @@
               "</div>" +
               "</div>" +
               "</div>" +
-              "<a class='btn btn-default" + size + "' data-wysihtml5-command='insertImage' title='" + locale.image.insert + "' tabindex='-1'><i class='fa fa-picture-o'></i></a>" +
+             
             "</li>";
         },
 
@@ -470,29 +468,27 @@
     var locale = $.fn.wysihtml5.locale = {
         en: {
             font_styles: {
-                normal: "Normal text",
-                h1: "Heading 1",
-                h2: "Heading 2",
-                h3: "Heading 3",
-                h4: "Heading 4",
-                h5: "Heading 5",
-                h6: "Heading 6"
+                normal: "Texto normal",
+                h1: "Título 1",
+                h2: "Título 2",
+                h3: "Título 3",
+                h4: "Título 4",
+                h5: "Título 5",
+                h6: "Título 6"
             },
             emphasis: {
-                bold: "Bold",
-                italic: "Italic",
-                underline: "Underline"
+                bold: "Negrito",
+                italic: "Itálico",
+                underline: "Sublinhado"
             },
             lists: {
-                unordered: "Unordered list",
-                ordered: "Ordered list",
-                outdent: "Outdent",
-                indent: "Indent"
+                unordered: "Lista não-ordenada",
+                ordered: "Lista ordenada"
             },
             link: {
-                insert: "Insert link",
-                cancel: "Cancel",
-                target: "Open link in new window"
+                insert: "Inserir Link",
+                cancel: "Cancelar",
+                target: "Abrir link em uma nova janela"
             },
             image: {
                 insert: "Insert image",
